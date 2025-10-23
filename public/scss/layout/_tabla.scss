@@ -1,0 +1,27 @@
+@use '../base/variables' as v;
+
+.main {
+    margin-top: 5rem;
+
+    table {
+        width: 100%;
+        margin-top: 3rem;
+        background-color: v.$blanco;
+        font-size: 1.8rem;
+        color: v.$gris-dark;
+        border-collapse: collapse;
+
+
+        thead {
+            border: solid 1px v.$gris-oscuro;
+            tr {
+                background-color: v.$azul-claro;
+
+                th {
+                    padding: 1rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

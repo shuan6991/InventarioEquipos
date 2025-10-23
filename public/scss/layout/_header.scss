@@ -1,0 +1,70 @@
+@use '../base/variables' as v;
+
+header {
+
+    background-color: v.$oscuro;
+    padding: 2rem 0;
+
+    .contenedor-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            color: v.$blanco;
+            font-size: 4rem;
+        }
+    }
+
+    .contendor-logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        picture {
+            width: 5rem;
+            background-color: v.$gris-oscuro;
+            padding: 1rem;
+            border-radius: 2rem;
+        }
+    }
+
+}
+
+.contenedor-nav {
+    display: flex;
+    gap: 2rem;
+
+    nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+            align-items: center;
+
+            li {
+                a {
+                    display: flex;
+                    color: v.$blanco;
+
+                    img {
+                        width: 3rem;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .boton{
+        a{
+            color: v.$blanco;
+            background-color: v.$rojo;
+            padding: .5rem 2rem;
+            border-radius: 1rem;
+        }
+    }
+}
