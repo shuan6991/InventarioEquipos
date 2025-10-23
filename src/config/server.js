@@ -10,7 +10,7 @@ export const iniciarServer = (app, opciones)=>{
     app.use(express.static(opciones.publicPath))
 
     app.get('/', (req, res)=>{
-        const indexPath = path.join(__dirname,  '../', '../', opciones.publicPath, 'html', 'index.html')
+        const indexPath = path.join(__dirname,  '../', '../', opciones.publicPath, 'index.html')
         res.sendFile(indexPath)
     })
 

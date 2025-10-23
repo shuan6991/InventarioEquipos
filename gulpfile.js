@@ -25,7 +25,7 @@ export function css() {
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(sourcemaps.write('.'))
-    .pipe(dest('build/css'));
+    .pipe(dest('public/build/css'));
 }
 
 export function javascript() {
@@ -35,7 +35,7 @@ export function javascript() {
     .pipe(terser())
     .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('.'))
-    .pipe(dest('build/js'));
+    .pipe(dest('public/build/js'));
 }
 
 // Si ya tienes funciones definidas para imágenes y webp, las puedes importar o definir aquí
