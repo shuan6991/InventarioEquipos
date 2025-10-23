@@ -55,11 +55,8 @@ export const actualizarEquipo = async (req, res) => {
 
 export const eliminarEquipo = async (req, res) => {
     try {
-        const { activo } = req.body
-        if (!activo)
-            return res.status(400).json({ message: 'El campo del activo es requerido' })
-
-        const eliminar = await equipo.findOneAndDelete({ activo })
+      
+        const eliminar = await equipo.findOneAndDelete(req.params.activo)
 
         if (!eliminar)
             return res.status(404).json({ message: `No se contro el equipo con el activo ${activo}` })

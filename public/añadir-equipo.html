@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e66f59721c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor-header contenedor">
+            <div class="contendor-logo">
+                <picture>
+                    <source srcset="../../build/img/logo.webp" type="image/webp">
+                    <source srcset="../../build/img/logo.png" type="image/jpeg">
+                    <img src="../../build/img/logo.png" alt="logo">
+                </picture>
+
+                <h1>InventarioSys</h1>
+            </div>
+
+            <div class="contenedor-nav">
+                <nav>
+                    <ul>
+                        <li><a href="tabla.html">
+                                <picture>
+                                    <source srcset="../../build/img/portátil.webp" type="image/webp">
+                                    <source srcset="../../build/img/portátil.png" type="image/jpeg">
+                                    <img src="../../build/img/portátil.png" alt="logo">
+                                </picture>
+                                Equipos
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <picture>
+                                    <source srcset="../../build/img/usuarios.webp" type="image/webp">
+                                    <source srcset="../../build/img/usuarios.png" type="image/jpeg">
+                                    <img src="../../build/img/usuarios.png" alt="logo">
+                                </picture>
+                                Usuarios
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="boton">
+                    <a href="">Cerrar Sesión</a>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <main class="contenedor main">
+        <div class="contenedor-formulario">
+            <div class="header-formulario">
+                <h2>Registrar Equipos</h2>
+            </div>
+
+            <div class="form">
+                <div class="formulario">
+                    <form class="formulario-equipos" action="">
+                        <div class="input-container">
+                            <label for="activo">Activo</label>
+                            <input type="number" id="activo" name="activo" required
+                                placeholder="Ingrese número de activo">
+                            <i class="fa fa-bookmark fa-2x"></i>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="serie">Serie</label>
+                            <input type="text" id="serie" name="serie" required
+                                placeholder="Ingrese el numero de serie">
+                            <i class="fa fa-code fa-2x"></i>
+                        </div>
+
+
+                        <div class="input-container">
+                            <label for="marca">Marca</label>
+                            <input type="text" id="marca" name="marca" required placeholder="Ingrese la marca">
+                            <i class="fa fa-registered fa-2x"></i>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="modelo">Model</label>
+                            <input type="text" id="modelo" name="modelo" required placeholder="Ingrese el modelo">
+                            <i class="fa fa-info-circle fa-2x"></i>
+                        </div>
+
+
+
+                        <div class="input-container">
+                            <label for="disco">Disco (GB)</label>
+                            <input type="text" id="disco" name="disco" required>
+                            <i class="fa fa-hdd fa-2x"></i>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="memoria">Memoria (GB)</label>
+                            <input type="text" id="memoria" name="memoria" required>
+                            <i class="fa fa-memory fa-2x"></i>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="procesador">Procesador</label>
+                            <input type="text" id="procesador" name="procesador" required placeholder="procesador">
+                            <i class="fa fa-microchip fa-2x"></i>
+                        </div>
+
+
+                        <div class="input-container">
+                            <label for="windows">Windows</label>
+                            <input type="text" id="windows" name="windows" required>
+                            <i class="fa-brands fa-windows fa-2x"></i>
+                        </div>
+
+                        <div class="input-container">
+                            <label for="office">Office</label>
+                            <input type="text" id="office" name="office" required>
+                            <i class="fa-solid fa-file-word fa-2x"></i>
+                        </div>
+
+
+                        <div class="formulario-boton">
+                            <input class="boton-formulario" type="submit" value="Enviar">
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script type="module" src="build/js/main.min.js"></script>
+
+</body>
+
+</html>

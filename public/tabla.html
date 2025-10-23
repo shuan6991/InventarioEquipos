@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <script src="https://kit.fontawesome.com/e66f59721c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../build/css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,15 +47,6 @@
                                 Usuarios
                             </a>
                         </li>
-                        <li><a href="">
-                                <picture>
-                                    <source srcset="../../build/img/configuración.webp" type="image/webp">
-                                    <source srcset="../../build/img/configuración.png" type="image/jpeg">
-                                    <img src="../../build/img/configuración.png" alt="logo">
-                                </picture>
-                                Configuración
-                            </a>
-                        </li>
                     </ul>
                 </nav>
 
@@ -69,7 +61,17 @@
 
 
     <main class="contenedor main">
-        <h2>Inventario de Equipos</h2>
+        <div class="contenedor-agregar">
+            <h2>Inventario de Equipos</h2>
+            <a href="añadir-equipo.html">
+                <picture>
+                    <source srcset="build/img/agregar.webp" type="image/webp">
+                    <source srcset="build/img/agregar.png" type="image/jpeg">
+                    <img src="build/img/agregar.png" alt="agregar">
+                </picture>
+                Agregar Equipo
+            </a>
+        </div>
 
         <table>
             <thead>
@@ -88,12 +90,12 @@
             </thead>
 
             <tbody class="tabla-equipos-cuerpo">
-              
+
             </tbody>
         </table>
     </main>
 
-    <script src="build/js/bundle.min.js"></script>
+    <script type="module" src="build/js/main.min.js"></script>
 </body>
 
 </html>

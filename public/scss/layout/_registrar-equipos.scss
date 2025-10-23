@@ -1,0 +1,10 @@
+@use '../base/variables'  as v;
+
+.header-formulario{
+    background-color: v.$oscuro;
+    h2{
+        color: v.$blanco;
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+}

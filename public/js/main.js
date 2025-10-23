@@ -1,8 +1,12 @@
-import { obtenerDatos } from "./equiposApi.js"
-import { tablaDatos } from "./ui.js"
+import { DatosHtml } from "./equiposApi.js"
+import { tablaDatos, formDatosEquipos} from "./ui.js"
 
 document.addEventListener('DOMContentLoaded', async () => {
-    equipos = await obtenerDatos()
+    const equipos = await DatosHtml()
+    formDatosEquipos() 
     if (equipos)
         tablaDatos(equipos)
+
+    
+
 })

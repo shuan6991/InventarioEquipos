@@ -8,6 +8,7 @@ import cssnano from 'cssnano';
 import concat from 'gulp-concat';
 import terser from 'gulp-terser-js';
 import rename from 'gulp-rename';
+import rollup from 'gulp-rollup';
 
 // Inicializar Sass con dart-sass
 const sass = gulpSass(dartSass);
@@ -30,11 +31,12 @@ export function css() {
 
 export function javascript() {
   return src(paths.js)
-    .pipe(sourcemaps.init())
-    .pipe(concat('bundle.js'))
+    .pipe(rollup({
+      input: 'public/js/main.js',
+      output: { format: 'esm' } // formato ES6
+    }))
     .pipe(terser())
     .pipe(rename({ suffix: '.min' }))
-    .pipe(sourcemaps.write('.'))
     .pipe(dest('public/build/js'));
 }
 

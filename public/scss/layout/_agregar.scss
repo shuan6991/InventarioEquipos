@@ -1,0 +1,25 @@
+@use '../base/variables' as v;
+
+.contenedor-agregar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+
+        background-color: v.$verde;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding: .5rem 2rem;
+        color: v.$blanco;
+        border-radius: .5rem;
+
+        img {
+            width: 2rem;
+            margin-top: .5rem;
+
+        }
+    }
+}

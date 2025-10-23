@@ -40,7 +40,7 @@ h3 {
 
 p,
 a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 a {
@@ -67,4 +67,26 @@ img {
         max-width: 140rem;
        
     }
+}
+
+.input-container {
+    position: relative; /* Contenedor de referencia */
+    width: 100%;
+    margin-bottom: 15px; 
+}
+
+.input-container input {
+    width: 100%;
+    /* Añade espacio a la derecha para que el texto no tape el ícono */
+    padding-right: 35px; 
+    /* (Añade aquí tus estilos de borde, fondo, etc.) */
+}
+
+.input-container i {
+    position: absolute; /* Mueve el ícono libremente */
+    right: 10px;        /* Distancia desde el borde derecho */
+    top: 69%;           /* Lo centra verticalmente */
+    transform: translateY(-50%); /* Ajuste vertical fino */
+    color: #999;        /* Color del ícono */
+    pointer-events: none; /* Asegura que se pueda hacer clic en el input */
 }

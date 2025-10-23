@@ -14,14 +14,40 @@
 
         thead {
             border: solid 1px v.$gris-oscuro;
+
             tr {
-                background-color: v.$azul-claro;
+                background-color: v.$gris-dark;
 
                 th {
                     padding: 1rem;
                     font-weight: 400;
+                    color: v.$blanco;
                 }
             }
+        }
+    }
+}
+
+
+.tabla-fila {
+
+    border: solid 1px v.$gris-oscuro;
+    text-align: center;
+
+    .tabla-dato {
+        padding: 1rem;
+        font-weight: 400;
+    }
+
+    .tabla-dato-img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+
+        picture {
+            width: 3rem;
+            cursor: pointer;
         }
     }
 }
