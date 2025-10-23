@@ -14,6 +14,6 @@ async function listarEquipos() {
         const datos = await res.json()
 
     } catch (error) {
-        console.log('Error al listar los equipos', error.messages)
+        console.log('Error al listar los equipos', error.message)
     }
 }
